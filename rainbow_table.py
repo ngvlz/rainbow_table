@@ -13,8 +13,7 @@ def create_rainbow(word_list, output_file):
         exit()
     # open the rainbow text file
     rainbow_file = open(output_file, "w")
-    # enumerate lines in wordlist_input to get index numbers and line values
-    for idx, line in enumerate(wordlist_input):
+    for line in wordlist_input:
         # remove all trailing characters at the end of the string
         line = line.rstrip()
         # encode the string
