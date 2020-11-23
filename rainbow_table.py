@@ -15,7 +15,7 @@ def create_rainbow(word_list, output_file):
     rainbow_file = open(output_file, "w")
     for line in wordlist_input:
         # remove all trailing characters at the end of the string
-        line = line.rstrip()
+        line = line.strip('\n')
         # encode the string
         line = line.encode("ISO-8859-1")
         # hash the string
