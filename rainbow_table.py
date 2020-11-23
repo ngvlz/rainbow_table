@@ -2,19 +2,19 @@
 import hashlib
 
 
-def create_rainbow(file_parm):
+def create_rainbow(word_list, output_file):
     # try to open the file
     try:
-        file_input = open(file_parm)
+        wordlist_input = open(word_list)
     # except error when the file cannot be opened
     except:
-        print("File cannot be found or opened:", file_parm)
+        print("File cannot be found or opened:", word_list)
         # quit the program
         exit()
     # open the rainbow text file
-    rainbow_file = open("english_rainbow.txt", "w")
-    # enumerate lines in file_input to get index numbers and line values
-    for idx, line in enumerate(file_input):
+    rainbow_file = open(output_file, "w")
+    # enumerate lines in wordlist_input to get index numbers and line values
+    for idx, line in enumerate(wordlist_input):
         # remove all trailing characters at the end of the string
         line = line.rstrip()
         # encode the string
@@ -26,7 +26,7 @@ def create_rainbow(file_parm):
         # write that hash value to the rainbow text file
         rainbow_file.write(hash_value + "\n")
     # close opened files
-    file_input.close()
+    wordlist_input.close()
     rainbow_file.close()
 
 
