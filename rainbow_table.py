@@ -1,4 +1,3 @@
-#import library
 import hashlib
 
 
@@ -27,10 +26,12 @@ def create_rainbow(word_list, output_file):
     # close opened files
     wordlist_input.close()
     rainbow_file.close()
+    print('--------------------------')
+    print(f'{output_file} updated')
 
 
 # prompt the user for a file name
-my_file = input("Enter file name to open: ")
+word_list = input("Enter file name to open: ")
 
 # execute function
-create_rainbow(my_file)
+create_rainbow(word_list, 'rainbow_table.txt')
