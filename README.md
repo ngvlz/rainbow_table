@@ -27,10 +27,3 @@ cd ./rainbow_table
 ```bash
 Enter file name to open: english.txt
 ```
-
-### Result
-
-```bash
---------------------------
-rainbow_table.txt updated
-```
