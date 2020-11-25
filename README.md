@@ -24,6 +24,12 @@ cd ./rainbow_table
 
 ### Example
 
+Terminal output would look like this:
+
 ```bash
+user@localhost:~$ python3 rainbow_table.py
+
 Enter file name to open: english.txt
+--------------------------
+rainbow_table.txt updated
 ```
