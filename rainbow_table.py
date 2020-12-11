@@ -6,7 +6,7 @@ def create_rainbow(word_list, output_file):
     try:
         wordlist_input = open(word_list)
     # except error when the file cannot be opened
-    except:
+    except Exception:
         print("File cannot be found or opened:", word_list)
         # quit the program
         exit()
